@@ -12,8 +12,8 @@
       </form>
       <div class="section">
         <p class="section-text">Or</p>
-        <button class="button">Google</button>
-        <button class="button">Microsoft</button>
+        <button class="button">Continue with Google</button>
+        <button class="button">Continue with Microsoft</button>
       </div>
     </div>
 </template>

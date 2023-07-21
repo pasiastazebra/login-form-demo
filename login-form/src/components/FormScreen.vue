@@ -20,7 +20,7 @@ export default {
 
 //color variables
 
-$primary: #6e98cf;
+$primary: #4180d3;
 $accent: #a17236;
 $windowBackground: #f7f7f7;
 
@@ -60,11 +60,17 @@ $windowBackground: #f7f7f7;
     color: $primary;
     margin: 2px;
 
-    transition: background-color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, box-shadow 0.6s ease-out;
     &.router-link-active {
       background-color: $primary;
       color: white;
       border-color: $primary;
+      border-radius: 3px;
+    }
+
+    &:not(.router-link-active):hover {
+      background-color: lighten($color: $primary, $amount: 35%);
+      border-color: lighten($color: $primary, $amount: 35%);
       border-radius: 3px;
     }
   }
