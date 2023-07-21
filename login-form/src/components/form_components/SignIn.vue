@@ -9,17 +9,22 @@
         <br>
         <input type="submit" value="Sign In">
       </form>
+      <div class="section">
+        <p class="section-text">Or</p>
+        <button class="button">Google</button>
+        <button class="button">Microsoft</button>
+      </div>
       <a>Cannot log in?</a>
     </div>
     </div>
-  </template>
+</template>
   
-  <script>
-  export default {
-    name: "SignIn"
-  };
-  </script>
+<script>
+export default {
+  name: "SignIn"
+};
+</script>
   
-  <style scoped lang="scss">
+<style scoped lang="scss">
   
-  </style>
+</style>

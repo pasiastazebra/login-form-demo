@@ -15,15 +15,20 @@
         <br>
         <input type="submit" value="Sign Up">
       </form>
+      <div class="section">
+        <p class="section-text">Or</p>
+        <button class="button">Google</button>
+        <button class="button">Microsoft</button>
+      </div>
     </div>
-  </template>
+</template>
   
-  <script>
-  export default {
-    name: "SignUp"
-  };
-  </script>
+<script>
+export default {
+  name: "SignUp"
+};
+</script>
   
-  <style scoped lang="scss">
+<style scoped lang="scss">
   
-  </style>
+</style>
