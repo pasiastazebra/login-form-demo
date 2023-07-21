@@ -21,7 +21,6 @@ export default {
 //color variables
 
 $primary: #6e98cf;
-$secondary: #e8bdba;
 $accent: #a17236;
 $windowBackground: #f7f7f7;
 
@@ -41,6 +40,7 @@ $windowBackground: #f7f7f7;
 
   &-title {
     font-size: 25px;
+    margin: 5px;
   }
 
   &-switch {
@@ -60,7 +60,7 @@ $windowBackground: #f7f7f7;
     color: $primary;
     margin: 2px;
 
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.6s ease-out;
     &.router-link-active {
       background-color: $primary;
       color: white;
