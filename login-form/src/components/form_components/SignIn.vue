@@ -23,5 +23,29 @@ export default {
 </script>
   
 <style scoped lang="scss">
+
+//color var
+
+$color: #a1a1a1;
+
+.field {
+  padding: 4px;
+     font-size: 15px;
+     border-width: 1px;
+     border-color: $color;
+     color: $color;
+     border-style: solid;
+     border-radius: 6px;
+
+     margin: 2px;
+     max-width: 45%;
+     &:focus {
+      outline:none;
+     }
+
+     &::placeholder {
+      color: $color;
+     }
+}
   
 </style>
