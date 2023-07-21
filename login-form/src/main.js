@@ -6,6 +6,10 @@ import SignIn from "./components/form_components/SignIn.vue";
 
 const routes = [
   {
+    path: "/", // Pusta ścieżka (root)
+    component: SignUp, // Komponent SignUp jako strona domyślna
+  },
+  {
     path: "/signup",
     name: "SignUp",
     component: SignUp,

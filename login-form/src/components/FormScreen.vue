@@ -5,7 +5,7 @@
       <router-link to="/signup" class="window-switch-option">Sign Up</router-link>
       <router-link to="/signin" class="window-switch-option">Sign In</router-link>
     </nav>
-    <router-view></router-view>
+    <router-view/>
   </div>
 </template>
 
@@ -17,5 +17,31 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+//color variables
+
+$primary: #6e98cf;
+$secondary: #e8bdba;
+$accent: #a17236;
+$windowBackground: #f7f7f7;
+
+.window {
+  background-color: $windowBackground;
+
+  max-width: 50%;
+  margin: 5% 30%;
+  padding: 1px;
+
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f7f7f700;
+  border-radius: 16px;
+
+  box-shadow: 14px 14px 16px -11px $primary;
+
+  &-title {
+    font-size: 25px;
+  }
+}
 
 </style>

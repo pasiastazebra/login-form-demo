@@ -1,12 +1,9 @@
 <template>
-    <div class="window">
-      <div class="window">
-      <form class="window-signup-form">
-        <!-- Need to delete <br> in the future -->
+    <div class="inside-window">
+      <div class="inside-window-signups">
+      <form class="inside-window-signup-form">
         <input type="text" class="field" placeholder="Login or e-mail"/>
-        <br>
         <input type="password" class="field" placeholder="Password"/>
-        <br>
         <input type="submit" value="Sign In">
       </form>
       <div class="section">
