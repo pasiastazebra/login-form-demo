@@ -42,6 +42,32 @@ $windowBackground: #f7f7f7;
   &-title {
     font-size: 25px;
   }
-}
 
+  &-switch {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $primary;
+  border-radius: 6px;
+
+  max-width: 50%;
+  margin: 6px 25%;
+
+  display:grid;
+  grid-template-columns: 1fr 1fr; 
+
+  &-option {
+    text-decoration: none;
+    color: $primary;
+    margin: 2px;
+
+    transition: background-color 0.3s ease-in-out;
+    &.router-link-active {
+      background-color: $primary;
+      color: white;
+      border-color: $primary;
+      border-radius: 3px;
+    }
+  }
+  }
+}
 </style>
