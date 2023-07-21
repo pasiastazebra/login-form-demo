@@ -8,12 +8,12 @@
         <input type="password" class="field" placeholder="Password"/>
         <input type="password" class="field" placeholder="Confirm password"/>
         <input type="tel" class="field" placeholder="Phone number"/>
-        <input type="submit" value="Sign Up">
+        <input type="submit" class="button" value="Sign Up">
       </form>
       <div class="section">
         <p class="section-text">Or</p>
-        <button class="button">Continue with Google</button>
-        <button class="button">Continue with Microsoft</button>
+        <button class="google-button">Continue with Google</button>
+        <button class="microsoft-button">Continue with Microsoft</button>
       </div>
     </div>
 </template>
@@ -32,22 +32,49 @@ $color: #a1a1a1;
 
 .field {
   padding: 4px;
-     font-size: 15px;
-     border-width: 1px;
-     border-color: $color;
-     color: $color;
-     border-style: solid;
-     border-radius: 6px;
+  font-size: 15px;
+  border-width: 1px;
+  border-color: $color;
+  color: $color;
+  border-style: solid;
+  border-radius: 6px;
 
-     margin: 2px;
-     max-width: 45%;
-     &:focus {
-      outline:none;
-     }
+  margin: 2px;
+  max-width: 45%;
 
-     &::placeholder {
-      color: $color;
-     }
+  &:focus {
+    outline:none;
+  }
+
+  &::placeholder {
+    color: $color;
+  }
 }
-  
+ 
+.button{
+  font-weight: 100;
+  font-size: 14px;
+  color: #fff;
+
+  background-color: #0066CC;
+  padding: 10px 29px;
+  border: 2px solid #0066cc;
+
+  box-shadow: none;
+  border-radius: 10px;
+  transition : 332ms;
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  cursor: pointer;
+
+  margin: 0 40%;
+
+  &:hover{
+    transition : 332ms;
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 2px #0066cc;
+  }
+}
 </style>

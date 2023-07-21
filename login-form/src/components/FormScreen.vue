@@ -20,7 +20,8 @@ export default {
 
 //color variables
 
-$primary: #4180d3;
+$primary: #0059ff;
+$shadow: #567aee;
 $accent: #a17236;
 $windowBackground: #f7f7f7;
 
@@ -36,7 +37,7 @@ $windowBackground: #f7f7f7;
   border-color: #f7f7f700;
   border-radius: 16px;
 
-  box-shadow: 14px 14px 16px -11px $primary;
+  box-shadow: 14px 14px 16px -11px $shadow;
 
   &-title {
     font-size: 25px;
