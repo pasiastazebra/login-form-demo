@@ -68,7 +68,8 @@ $color: #a1a1a1;
   align-items: center;
   cursor: pointer;
 
-  margin: 0 40%;
+  margin: 10px 40%;
+  max-width: 50px;
 
   &:hover{
     transition : 332ms;
