@@ -6,18 +6,26 @@ import SignIn from "./components/form_components/SignIn.vue";
 
 const routes = [
   {
-    path: "/", // Pusta ścieżka (root)
-    component: SignUp, // Komponent SignUp jako strona domyślna
+    path: "/",
+    component: SignUp,
   },
   {
     path: "/signup",
     name: "SignUp",
     component: SignUp,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight"
+    },
   },
   {
     path: "/signin",
     name: "SignIn",
     component: SignIn,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft"
+    },
   },
 ];
 

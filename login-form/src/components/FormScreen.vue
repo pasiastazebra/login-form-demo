@@ -5,8 +5,11 @@
       <router-link to="/signup" class="window-switch-option">Sign Up</router-link>
       <router-link to="/signin" class="window-switch-option">Sign In</router-link>
     </nav>
-    <router-view v-slot="{ Component }">
-      <transition name="fade">
+    <router-view v-slot="{ Component, route }">
+      <transition 
+        :enter-active-class="route.meta.enterClass"
+        :leave-active-class="route.meta.leaveClass" 
+        mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
