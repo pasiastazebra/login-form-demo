@@ -46,6 +46,8 @@ $windowBackground: #f7f7f7;
 
   box-shadow: 14px 14px 16px -11px $shadow;
 
+  overflow: hidden;
+
   &-title {
     font-size: 25px;
     margin: 5px;
@@ -85,13 +87,4 @@ $windowBackground: #f7f7f7;
   }
 }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease-out;
-}
 </style>

@@ -14,8 +14,8 @@ const routes = [
     name: "SignUp",
     component: SignUp,
     meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight"
+      enterClass: "animate__animated animate__fadeInLeft faster animate__faster",
+      leaveClass: "animate__animated animate__fadeOutRight faster animate__faster"
     },
   },
   {
@@ -23,8 +23,8 @@ const routes = [
     name: "SignIn",
     component: SignIn,
     meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft"
+      enterClass: "animate__animated animate__fadeInRight animate__faster",
+      leaveClass: "animate__animated animate__fadeOutLeft animate__faster"
     },
   },
 ];
