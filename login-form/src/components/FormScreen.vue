@@ -5,7 +5,11 @@
       <router-link to="/signup" class="window-switch-option">Sign Up</router-link>
       <router-link to="/signin" class="window-switch-option">Sign In</router-link>
     </nav>
-    <router-view/>
+    <router-view v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
@@ -76,5 +80,15 @@ $windowBackground: #f7f7f7;
     }
   }
   }
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
 }
 </style>
