@@ -8,6 +8,7 @@
         <input type="password" class="field" placeholder="Password"/>
         <input type="password" class="field" placeholder="Confirm password"/>
         <input type="tel" class="field" placeholder="Phone number"/>
+        <br>
         <input type="submit" class="button" value="Sign Up">
       </form>
       <div class="section">
@@ -57,19 +58,17 @@ $color: #a1a1a1;
   color: #fff;
 
   background-color: #0066CC;
-  padding: 10px 29px;
+  padding: 6px;
   border: 2px solid #0066cc;
 
   box-shadow: none;
   border-radius: 10px;
   transition : 332ms;
-  display: flex;
-  flex-direction:row-reverse;
-  align-items: center;
   cursor: pointer;
 
-  margin: 10px 40%;
-  max-width: 50px;
+  margin: 20px;
+  //max-width: 45%;
+  min-width: 45%;
 
   &:hover{
     transition : 332ms;

@@ -4,12 +4,13 @@
       <form class="inside-window-signup-form">
         <input type="text" class="field" placeholder="Login or e-mail"/>
         <input type="password" class="field" placeholder="Password"/>
-        <input type="submit" value="Sign In">
+        <br>
+        <input type="submit" class="button" value="Sign In">
       </form>
       <div class="section">
         <p class="section-text">Or</p>
-        <button class="button">Continue with Google</button>
-        <button class="button">Continue with Microsoft</button>
+        <button class="google-button">Continue with Google</button>
+        <button class="microsoft-button">Continue with Microsoft</button>
       </div>
       <a>Cannot log in?</a>
     </div>
@@ -47,5 +48,30 @@ $color: #a1a1a1;
       color: $color;
      }
 }
-  
+
+.button{
+  font-weight: 100;
+  font-size: 14px;
+  color: #fff;
+
+  background-color: #0066CC;
+  padding: 6px;
+  border: 2px solid #0066cc;
+
+  box-shadow: none;
+  border-radius: 10px;
+  transition : 332ms;
+  cursor: pointer;
+
+  margin: 20px;
+  //max-width: 45%;
+  min-width: 45%;
+
+  &:hover{
+    transition : 332ms;
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 2px #0066cc;
+  }
+}
 </style>
