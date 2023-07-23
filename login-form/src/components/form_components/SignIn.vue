@@ -25,7 +25,7 @@ export default {
   
 <style scoped lang="scss">
 
-//color var
+//color variable
 
 $color: #a1a1a1;
 
