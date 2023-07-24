@@ -34,6 +34,8 @@ const router = createRouter({
   routes,
 });
 
+
+
 createApp(App)
   .use(router)
   .mount("#app");

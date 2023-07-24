@@ -2,8 +2,8 @@
     <div class="inside-window">
       <div class="inside-window-signups">
       <form class="inside-window-signup-form">
-        <input type="text" class="field" placeholder="Login or e-mail"/>
-        <input type="password" class="field" placeholder="Password"/>
+        <input type="text" class="field" placeholder="Login or e-mail" required/>
+        <input type="password" class="field" placeholder="Password" required/>
         <br>
         <input type="submit" class="button" value="Sign In">
       </form>

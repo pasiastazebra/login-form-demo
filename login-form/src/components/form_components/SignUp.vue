@@ -1,13 +1,13 @@
 <template>
     <div class="inside-window">
       <form class="inside-window-signup-form">
-        <input type="text" class="field" placeholder="First name"/>
-        <input type="text" class="field" placeholder="Last name"/>
-        <input type="text" class="field" placeholder="Login"/>
-        <input type="email" class="field" placeholder="E-mail"/>
-        <input type="password" class="field" placeholder="Password"/>
-        <input type="password" class="field" placeholder="Confirm password"/>
-        <input type="tel" class="field" placeholder="Phone number"/>
+        <input type="text" class="field" placeholder="First name" required/>
+        <input type="text" class="field" placeholder="Last name" required/>
+        <input type="text" class="field" placeholder="Login" required/>
+        <input type="email" class="field" placeholder="E-mail" required/>
+        <input type="password" class="field" placeholder="Password" required/>
+        <input type="password" class="field" placeholder="Confirm password" required/>
+        <input type="tel" class="field" placeholder="Phone number" required/>
         <br>
         <input type="submit" class="button" value="Sign Up">
       </form>
