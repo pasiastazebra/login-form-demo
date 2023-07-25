@@ -2,8 +2,13 @@
     <div class="inside-window">
       <div class="inside-window-signups">
       <form class="inside-window-signup-form">
-        <input type="text" class="field" placeholder="Login or e-mail" required/>
-        <input type="password" class="field" placeholder="Password" required/>
+        <div class="field-group">
+          <input type="text" class="field" placeholder="Login or e-mail" required/>
+          <input type="password" class="field" placeholder="Password" required/>
+        </div>
+        <div class="field-group">
+          <input type="password" class="field" placeholder="Password" required/>
+        </div>
         <br>
         <input type="submit" class="button" value="Sign In">
       </form>
@@ -30,23 +35,28 @@ export default {
 $color: #a1a1a1;
 
 .field {
+  flex: 0 0 98%;
   padding: 4px;
-     font-size: 15px;
-     border-width: 1px;
-     border-color: $color;
-     color: $color;
-     border-style: solid;
-     border-radius: 6px;
+  font-size: 15px;
+  border-width: 1px;
+  border-color: $color;
+  color: $color;
+  border-style: solid;
+  border-radius: 6px;
+  margin: 2px;
+  
+  &:focus {
+    outline:none;
+  }
 
-     margin: 2px;
-     max-width: 45%;
-     &:focus {
-      outline:none;
-     }
+  &::placeholder {
+    color: $color;
+  }
+}
 
-     &::placeholder {
-      color: $color;
-     }
+.field-group {
+  display: flex;
+  justify-content: space-between;
 }
 
 .button{
