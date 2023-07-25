@@ -3,6 +3,7 @@
       <form class="inside-window-signup-form">
         <div class="field-group">
           <input type="text" class="field" placeholder="First name" required/>
+          <br>
           <input type="text" class="field" placeholder="Last name" required/>
         </div>
         <div class="field-group">
@@ -16,6 +17,7 @@
         </div>
         <div class="field-group">
           <input type="password" class="field" placeholder="Password" required/>
+          <br>
           <input type="password" class="field" placeholder="Confirm password" required/>
         </div>
         <br>
@@ -47,6 +49,10 @@ $color: #a1a1a1;
 .field-group {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
 }
 
 .field {
@@ -59,6 +65,10 @@ $color: #a1a1a1;
   border-style: solid;
   border-radius: 6px;
   margin: 2px;
+
+  @media (max-width: 1100px) {
+    flex: 0 0 100%;
+  }
   
   &:focus {
     outline:none;
@@ -96,6 +106,12 @@ $color: #a1a1a1;
     background-color: #fff;
     color: #0066cc;
     border: solid 2px #0066cc;
+  }
+}
+
+@media (max-width: 1100px) {
+  .field-group > br {
+    display: none;
   }
 }
 </style>

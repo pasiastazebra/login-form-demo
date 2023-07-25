@@ -90,6 +90,7 @@ $color: #a1a1a1;
     color: #0066cc;
     border: solid 1px #0066cc;
     border-radius: 10px;
+    cursor: help;
   }
 }
 </style>
