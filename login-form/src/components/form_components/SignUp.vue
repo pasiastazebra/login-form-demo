@@ -1,13 +1,23 @@
 <template>
     <div class="inside-window">
       <form class="inside-window-signup-form">
-        <input type="text" class="field" placeholder="First name" required/>
-        <input type="text" class="field" placeholder="Last name" required/>
-        <input type="text" class="field" placeholder="Login" required/>
-        <input type="email" class="field" placeholder="E-mail" required/>
-        <input type="password" class="field" placeholder="Password" required/>
-        <input type="password" class="field" placeholder="Confirm password" required/>
-        <input type="tel" class="field" placeholder="Phone number" required/>
+        <div class="field-group">
+          <input type="text" class="field" placeholder="First name" required/>
+          <input type="text" class="field" placeholder="Last name" required/>
+        </div>
+        <div class="field-group">
+          <input type="tel" class="field single" placeholder="Phone number" required/>
+        </div>
+        <div class="field-group">
+          <input type="email" class="field single" placeholder="E-mail" required/>
+        </div>
+        <div class="field-group">
+          <input type="text" class="field single" placeholder="Login" required/>
+        </div>
+        <div class="field-group">
+          <input type="password" class="field" placeholder="Password" required/>
+          <input type="password" class="field" placeholder="Confirm password" required/>
+        </div>
         <br>
         <input type="submit" class="button" value="Sign Up">
       </form>
@@ -31,7 +41,17 @@ export default {
 
 $color: #a1a1a1;
 
+.inside-window-signup-form {
+  padding: 5px;
+}
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+}
+
 .field {
+  flex: 0 0 48%;
   padding: 4px;
   font-size: 15px;
   border-width: 1px;
@@ -39,10 +59,8 @@ $color: #a1a1a1;
   color: $color;
   border-style: solid;
   border-radius: 6px;
-
   margin: 2px;
-  max-width: 45%;
-
+  
   &:focus {
     outline:none;
   }
@@ -50,6 +68,10 @@ $color: #a1a1a1;
   &::placeholder {
     color: $color;
   }
+}
+
+.single {
+  flex: 0 0 98%;
 }
  
 .button{
@@ -67,7 +89,7 @@ $color: #a1a1a1;
   cursor: pointer;
 
   margin: 20px;
-  //max-width: 45%;
+  max-width: 45%;
   min-width: 45%;
 
   &:hover{
