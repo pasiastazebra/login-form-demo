@@ -21,11 +21,6 @@
         <br>
         <input type="submit" class="button" value="Sign Up">
       </form>
-      <div class="section">
-        <p class="section-text">Or</p>
-        <button class="google-button">Continue with Google</button>
-        <button class="microsoft-button">Continue with Microsoft</button>
-      </div>
     </div>
 </template>
   
@@ -40,6 +35,10 @@ export default {
 //color var
 
 $color: #a1a1a1;
+
+.inside-window {
+  margin-top: 10px;
+}
 
 .inside-window-signup-form {
   padding: 5px;
@@ -88,7 +87,7 @@ $color: #a1a1a1;
   transition : 332ms;
   cursor: pointer;
 
-  margin: 20px;
+  margin: 10px;
   max-width: 45%;
   min-width: 45%;
 

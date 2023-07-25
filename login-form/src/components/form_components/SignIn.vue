@@ -12,12 +12,7 @@
         <br>
         <input type="submit" class="button" value="Sign In">
       </form>
-      <div class="section">
-        <p class="section-text">Or</p>
-        <button class="google-button">Continue with Google</button>
-        <button class="microsoft-button">Continue with Microsoft</button>
-      </div>
-      <a>Cannot log in?</a>
+      <a class="recover-password">Cannot log in?</a>
     </div>
     </div>
 </template>
@@ -33,6 +28,10 @@ export default {
 //color variable
 
 $color: #a1a1a1;
+
+.inside-window {
+  margin-top: 10px;
+}
 
 .field {
   flex: 0 0 98%;
@@ -73,8 +72,7 @@ $color: #a1a1a1;
   transition : 332ms;
   cursor: pointer;
 
-  margin: 20px;
-  //max-width: 45%;
+  margin: 10px;
   min-width: 45%;
 
   &:hover{
@@ -82,6 +80,16 @@ $color: #a1a1a1;
     background-color: #fff;
     color: #0066cc;
     border: solid 2px #0066cc;
+  }
+}
+
+.recover-password {
+  outline: none;
+  color: #287dd1;
+  &:hover{
+    color: #0066cc;
+    border: solid 1px #0066cc;
+    border-radius: 10px;
   }
 }
 </style>
